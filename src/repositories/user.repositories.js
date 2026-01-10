@@ -15,7 +15,7 @@ db.run(`
             const {username, email, password, avatar} = newUser
             db.run(
                 `
-                INSERT INTO users (username, email, password avatar)
+                INSERT INTO users (username, email, password, avatar)
                 VALUES (?, ?, ?, ? )
                 `,
                  [username, email, password, avatar],
